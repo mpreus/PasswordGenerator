@@ -1,0 +1,88 @@
+html, body {
+	background: #eee;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+}
+
+.wraper {
+	background: #fff;
+	border: .2rem solid darkred;
+	border-radius: .5rem;
+	box-shadow: .5rem .5rem .6rem gray;
+	margin: 5rem auto;
+	width: 35rem;
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+p {
+	color: #222;
+	font-size: 1rem;
+	line-height: 1.2rem;
+	padding: .1rem .5rem;
+	text-align: justify;
+}
+
+.message {
+	font-size: 1.2rem;
+	margin-bottom: .3rem;
+	padding: .5rem;
+	text-align: center;
+}
+
+textarea {
+	border: .1rem solid grey;
+	border-radius: .3rem;
+	font-size: 1rem;
+	margin: .2rem 1.25rem;
+	padding: .2rem;
+	width: 32rem;
+	
+}
+
+button {
+	background: #fff;
+	border: none;
+	border-radius: .2rem;
+	box-shadow: .2rem .2rem .3rem gray;
+	display: block;
+	font-size: .8rem;
+	height: 1.6rem;
+	margin: .5rem auto;
+	width: 5rem;
+}
+
+@media screen and (max-width: 700px) {
+	.wraper {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		margin: 1rem auto;
+		width: 95%;
+	}
+	h1 {
+		font-size: 1.4rem;
+	}
+	p {
+		font-size: 1.2rem;
+		line-height: 2rem;
+		padding: .1rem .5rem;
+	}
+	.message {
+		font-size: 1.4rem;
+		line-height: 2rem;
+		margin-bottom: .3rem;
+		padding: .5rem;
+		text-align: center;
+	}
+	button {
+		font-size: 1.2rem;
+		height: 2.6rem;
+		margin: .5rem auto;
+		padding: .6rem;
+		width: 6rem;
+	}
+}
