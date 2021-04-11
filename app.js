@@ -10,13 +10,13 @@ function init() {
 /* After clicking the button 'Start', the text area gets enabled */
 		if (this.innerText === "Start") {
 			
-			text = ""; 			// randomly generated string made empty (and ready for new value)
+						// randomly generated string made empty (and ready for new value)
 
 			randomTextGen(20);	// run function
 			playGame();			// run function
 		}
 		else if (this.innerText === "Done") {
-
+			text = "";
 			button.innerText = "Start"; 	// changing the name of the button
 			
 			endGame();						// run function
