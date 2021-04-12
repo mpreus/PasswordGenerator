@@ -45,6 +45,19 @@ button {
 	width: 5rem;
 }
 
+button#darkMode {
+	background: #000;
+	border: none;
+	border-radius: .2rem;
+	box-shadow: .2rem .2rem .3rem gray;
+	color: #eee;
+	display: block;
+	font-size: .8rem;
+	height: 1.6rem;
+	margin: .5rem .1rem .5rem auto;
+	width: 12rem;
+}
+
 @media screen and (max-width: 700px) {
 	.wraper {
 		align-items: center;
@@ -75,4 +88,16 @@ button {
 		padding: .6rem;
 		width: 6rem;
 	}
+button#darkMode {
+	background: #000;
+	border: none;
+	border-radius: .2rem;
+	box-shadow: .2rem .2rem .3rem gray;
+	color: #eee;
+	display: block;
+	font-size: .8rem;
+	height: 2.6rem;
+	margin: .5rem .1rem .5rem auto;
+	width: 12rem;
+}
 }

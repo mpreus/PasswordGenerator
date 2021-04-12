@@ -1,10 +1,37 @@
 document.addEventListener("DOMContentLoaded", init);
 function init() {
 	
+	const darkModeButton = document.querySelector("#darkMode");
 	const message = document.querySelector(".message"); 	// space for the password
 	const button = document.querySelector("#startGen"); 	// Start/Done button 
 	let text = "";											// empty string for randomly generated password
 	
+	darkModeButton.addEventListener("click", function() {
+			const background = document.querySelector("body");
+			const wraper = document.querySelector(".wraper");
+			const wraperPara = document.querySelector("p");
+
+		if (this.innerText === "Dark mode") {
+			background.style.background = "black";
+			wraper.style.background = "black";
+			wraper.style.color = "white";
+			wraperPara.style.color = "white";
+			darkModeButton.style.background = "white";
+			darkModeButton.style.color = "black";
+			darkModeButton.innerText = "Bright mode";
+		}
+		
+		else if (this.innerText === "Bright mode") {
+			background.style.background = "white";
+			wraper.style.background = "white";
+			wraper.style.color = "black";
+			wraperPara.style.color = "black";
+			darkModeButton.style.background = "black";
+			darkModeButton.style.color = "white";
+			darkModeButton.innerText = "Dark mode";
+		}
+	});
+
 	button.addEventListener("click", function() {
 /* After clicking the button 'Start' */
 		if (this.innerText === "Start") {
