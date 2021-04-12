@@ -24,7 +24,7 @@ function init() {
 /* F. randomly generating characters for the password */
 	function randomTextGen(numOfCharacters) {
 	// let's declare the content of the password (set of signs: characters, numbers and punctation marks)
-	    let charArray = "a,b,c,d,e,f,g,[,h,i,j,!,_,k,l,m,<,>,@,&,],n,(,),o,9,6,7,5,8,4,3,2,1,0,:,p,q,;,+,-,s,r,=,t,u,v,w,x,y,z".split(",");
+	    let charArray = "q,w,e,r,t,y,u,i,o,p,l,k,j,h,g,f,d,s,a,z,x,c,v,b,n,m,q,w,e,r,t,y,u,i,o,p,l,k,j,h,g,f,d,s,a,z,x,c,v,b,n,m,a,b,c,d,e,f,g,[,h,i,j,!,_,k,l,m,<,>,@,&,],n,(,),o,9,6,7,5,8,4,3,2,1,0,:,p,q,;,+,-,s,r,=,t,u,v,w,x,y,z".split(",");
 
 	    for (let i = 0; i < numOfCharacters; i++) {
 	        let rand = null; 
