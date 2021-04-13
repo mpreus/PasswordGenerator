@@ -1,5 +1,5 @@
 html, body {
-	background: #eee;
+	background: #fff;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 20px;
 }
@@ -88,16 +88,16 @@ button#darkMode {
 		padding: .6rem;
 		width: 6rem;
 	}
-button#darkMode {
-	background: #000;
-	border: none;
-	border-radius: .2rem;
-	box-shadow: .2rem .2rem .3rem gray;
-	color: #eee;
-	display: block;
-	font-size: .8rem;
-	height: 2.6rem;
-	margin: .5rem .1rem .5rem auto;
-	width: 12rem;
-}
+	button#darkMode {
+		background: #000;
+		border: none;
+		border-radius: .2rem;
+		box-shadow: .2rem .2rem .3rem gray;
+		color: #eee;
+		display: block;
+		font-size: .8rem;
+		height: 2.6rem;
+		margin: .5rem .1rem .5rem auto;
+		width: 12rem;
+	}
 }

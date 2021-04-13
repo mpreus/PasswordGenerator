@@ -6,13 +6,15 @@ function init() {
 	const button = document.querySelector("#startGen"); 	// Start/Done button 
 	let text = "";											// empty string for randomly generated password
 	
-	darkModeButton.addEventListener("click", function() {
-			const background = document.querySelector("body");
+	darkModeButton.addEventListener("click", function() {			// dark mode after clicking the button
+			const bodyBackground = document.querySelector("body");
+			const htmlBackground = document.querySelector("html");
 			const wraper = document.querySelector(".wraper");
 			const wraperPara = document.querySelector("p");
 
-		if (this.innerText === "Dark mode") {
-			background.style.background = "black";
+		if (this.innerText === "Dark mode") {				// impose dark mode...
+			bodyBackground.style.background = "black";		// ...with black background and white text
+			htmlBackground.style.background = "black";
 			wraper.style.background = "black";
 			wraper.style.color = "white";
 			wraperPara.style.color = "white";
@@ -21,8 +23,9 @@ function init() {
 			darkModeButton.innerText = "Bright mode";
 		}
 		
-		else if (this.innerText === "Bright mode") {
-			background.style.background = "white";
+		else if (this.innerText === "Bright mode") { 		// impose bright mode...
+			bodyBackground.style.background = "white";		// ...with white background and black text
+			htmlBackground.style.background = "white";
 			wraper.style.background = "white";
 			wraper.style.color = "black";
 			wraperPara.style.color = "black";
