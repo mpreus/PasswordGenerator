@@ -1,0 +1,3 @@
+Password generator based on JS randomly takes characters from the defined array. The application after clicking Start button shows in the Internet browser the 20-character password. When Done button is clicked, the password disappeares forever. 
+Additionally, there is Dark mode implemented. It changes the display mode easier to use in the dark environment. 
+The application is mobile-divice ready which was tested on several cell phones. 
